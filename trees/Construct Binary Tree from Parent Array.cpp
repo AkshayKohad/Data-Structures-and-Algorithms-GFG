@@ -104,11 +104,11 @@ struct Node
 Node *createTree(int parent[], int N)
 {
     // Your code here
-   // vector<Node*>a;
+   
    vector<Node*>a;
    Node*head;
-  // Node*q = new Node;
-   Node*p= new Node(1);
+  
+  
      for(int i=0;i<N;i++)
      {
          Node*p= new Node(i);
@@ -135,13 +135,5 @@ Node *createTree(int parent[], int N)
        }
      }
      
-     
-     
-    //  for(int i=0;i<a.size();i++)
-    //  {
-    //      cout<<a[i]->data<<" ";
-    //  }
-    //  cout<<endl;
-    //  cout<<a.size()<<endl;
     return a[index];
 }

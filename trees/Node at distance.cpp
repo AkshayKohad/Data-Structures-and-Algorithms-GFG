@@ -1,6 +1,6 @@
 //METHOD 1
 
-void solution(Node*root, int k ,int p, vector<Node*>&s,int &res, unordered_set<Node*>&u)
+void solution(Node*root, int k ,int p, vector<Node*>&s, unordered_set<Node*>&u)
 {
     s.push_back(root);
     
@@ -15,7 +15,7 @@ void solution(Node*root, int k ,int p, vector<Node*>&s,int &res, unordered_set<N
         {
             if(u.find(s[s.size()-k-1]) ==u.end())
             {
-              res++;
+              
               
               u.insert(s[s.size()-k-1]);
               
@@ -28,8 +28,8 @@ void solution(Node*root, int k ,int p, vector<Node*>&s,int &res, unordered_set<N
         
     }
     
-    solution(root->left,k,p+1,s,res,u);
-    solution(root->right,k,p+1,s,res,u);
+    solution(root->left,k,p+1,s,u);
+    solution(root->right,k,p+1,s,u);
     s.pop_back();
     return;
     
@@ -44,7 +44,7 @@ int printKDistantfromLeaf(Node* root, int k)
  vector<Node*>s;
  unordered_set<Node*>u;
  int res=0;
-    solution(root,k,0,s,res,u);
+    solution(root,k,0,s,u);
     
     return u.size();
 	//Add your code here. 

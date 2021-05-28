@@ -9,7 +9,11 @@ class Solution
         if(n==k)
         {
             priority_queue<int,vector<int>,greater<int>>pq(arr,arr+k);
-         
+          while(pq.size()!=0)
+           {
+           a.push_back(pq.top());
+           pq.pop();
+           }
         }
         
         
@@ -24,17 +28,14 @@ class Solution
            pq.push(arr[i]);
        }
        
-      
-        }
-      
-      
        while(pq.size()!=0)
-           {
+       {
            a.push_back(pq.top());
            pq.pop();
-           }
+       }
+        }
        
-      
+        //cout<<pq.size();
         return a;
     }
 };

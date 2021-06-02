@@ -1,4 +1,4 @@
-
+// Here we have used adjacency list
 class Solution 
 {
     public:

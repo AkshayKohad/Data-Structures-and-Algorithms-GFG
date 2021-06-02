@@ -1,3 +1,4 @@
+// here we have used adjacency list
 #include<bits/stdc++.h>
 using namespace std;
 

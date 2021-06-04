@@ -1,7 +1,7 @@
 class Solution
 {
   
-  
+  // NOTE solution function uses BFS approach and solution1 function DFS approach, DFS approach is prefered over BFS approach
     public:
     
     void solution1(int i,int j,bool *visited,vector<vector<char>>&grid)

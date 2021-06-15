@@ -1,7 +1,0 @@
-1.DL assignment
-2. DL week-4
-3. gfg graphs 
-4. try solving question on codechef
-5. CAT
-6. WHEN TO USE SYNCHRONOUS AND ASYNCHRONOUS
- 

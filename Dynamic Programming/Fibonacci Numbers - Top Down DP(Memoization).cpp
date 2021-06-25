@@ -23,10 +23,10 @@ class Solution
     long long findNthFibonacci(int number)
     {
         // Your Code Here
-        vector<long long>res(number+1,-1);
-        solution(number,res);
         if(number==1 || number==0)
         return number;
+        vector<long long>res(number+1,-1);
+        solution(number,res);
         return res[number];
     }
 

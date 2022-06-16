@@ -13,7 +13,7 @@ public:
   int count_num(int mid,vector<vector<int>>&matrix,int r,int c)
   {
       int count = 0;
-     // cout<<"m "<<mid<<endl;
+    
       for(int i=0;i<r;i++)
       {
          int l = 0;
@@ -31,9 +31,8 @@ public:
                  h = m-1;
              }
          }
-        // cout<<l<<endl;
          count += l;
-        // cout<<"f "<<l<<endl;
+    
       }
       
       return count;
@@ -50,9 +49,7 @@ public:
             low = min(low,matrix[i][0]);
             high = max(high,matrix[i][c-1]);
         }
-      //  cout<<low<<" "<<high<<endl;
-      //  int low = 1;
-    //    int high = 1e9;
+      
         int val = (r*c)/2;
         while(low<=high)
         {
@@ -74,22 +71,4 @@ public:
     }
 };
 
-// { Driver Code Starts.
 
-int main()
-{
-    int t;
-    cin>>t;
-    while(t--)
-    {
-        int r, c;
-        cin>>r>>c;
-        vector<vector<int>> matrix(r, vector<int>(c));
-        for(int i = 0; i < r; ++i)
-            for(int j = 0;j < c; ++j)
-                cin>>matrix[i][j];
-        Solution obj;
-        cout<<obj.median(matrix, r, c)<<endl;        
-    }
-    return 0;
-}  // } Driver Code Ends
